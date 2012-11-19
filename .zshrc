@@ -39,10 +39,10 @@ bindkey -e
 ## Prompt
 autoload colors
 colors
-PROMPT="%{${fg[green]}%}[%m] %(!.#.$) %{${reset_color}%}"
-PROMPT2="%{${fg[green]}%}%_> %{${reset_color}%}"
+PROMPT="%{${fg[magenta]}%}[%m:%~] %(!.#.$) %{${reset_color}%}"
+PROMPT2="%{${fg[magenta]}%}%_> %{${reset_color}%}"
 SPROMPT="%{${fg[red]}%}correct: %R -> %r [nyae]? %{${reset_color}%}"
-RPROMPT="%{${fg[green]}%}[%~]%{${reset_color}%}"
+RPROMPT="%{${fg[cyan]}%}[%n]%{${reset_color}%}"
 
 export LSCOLORS=exfxcxdxbxegedabagacad
 
