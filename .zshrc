@@ -22,15 +22,23 @@ export MATHPATH=/opt/local/man:$MANPATH
 autoload -U compinit && compinit
 zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
-## Enable comments in command line
-setopt interactive_comments
+## Enable history search with Ctrl-P and Ctrl-N
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^P" history-beginning-search-backward-end
+bindkey "^N" history-beginning-search-forward-end
 
 ## Save directory history
 setopt auto_pushd
 
 ## Emacs key bind
 bindkey -e
+
+## Enable comments in command line
+setopt interactive_comments
 
 #------------------------------------------------------------------------------
 # Look And Feel
