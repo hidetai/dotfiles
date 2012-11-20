@@ -59,3 +59,11 @@ setopt extended_history
 setopt inc_append_history
 ## Share history
 setopt share_history
+
+#------------------------------------------------------------------------------
+# Load local file
+#------------------------------------------------------------------------------
+
+if [ -f $HOME/.zshrc.local ]; then
+    source $HOME/.zshrc.local
+fi
