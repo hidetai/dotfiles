@@ -40,6 +40,12 @@ bindkey -e
 ## Enable comments in command line
 setopt interactive_comments
 
+## Automatically run ls after every cd
+function chpwd() {
+    emulate -L zsh
+    ls
+}
+
 #------------------------------------------------------------------------------
 # Look And Feel
 #------------------------------------------------------------------------------
