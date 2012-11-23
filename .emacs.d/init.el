@@ -282,6 +282,8 @@
 ;;;----------------------------------------------------------------------------
 
 (when (require 'anything-startup nil t)
+  (setq anything-c-filelist-file-name "/tmp/all.filelist")
+  (setq anything-grep-candidates-fast-directory-regexp "^/tmp")
   (define-key global-map (kbd "C-x b") 'anything-filelist+)
   (define-key global-map (kbd "M-y") 'anything-show-kill-ring))
 
