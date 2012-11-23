@@ -286,8 +286,6 @@
 (when (require 'org-install nil t)
   (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode)))
 
-  ;; (add-to-list 'auto-mode-alist '("\\.txt$" . org-mode)))
-
 ;;;----------------------------------------------------------------------------
 ;;; google-c-style.el
 ;;;
