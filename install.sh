@@ -2,7 +2,7 @@
 ################################################################################
 # install.sh
 #
-#   This script creates symolic links from the home directory to dotfiles.
+#   This script creates symbolic links from the home directory to dotfiles.
 ################################################################################
 
 dotdir=$HOME/dotfiles
