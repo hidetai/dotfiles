@@ -250,7 +250,7 @@
 
 (when (and (require 'color-moccur nil t)
            (require 'moccur-edit nil t))
-  (define-key global-map (kbd "M-o")  'occur-by-moccur)
+  (define-key global-map (kbd "M-o") 'moccur-grep-find)
   ;; enable AND search
   (setq moccur-split-word t)
   ;; Exclude some files
