@@ -4,9 +4,19 @@
 # Alias
 #------------------------------------------------------------------------------
 
-alias ls="ls -G"
+## ls
+export LSCOLORS=exgxfxdxcxdxdxbxadacec
+case "${OSTYPE}" in
+darwin*)
+    alias ls="ls -GF"
+    ;;
+linux*)
+    alias ls="ls -F --color=auto"
+    ;;
+esac
+
 alias la='ls -a'
-alias ll='ls -l'
+alias ll='ls -al'
 
 #------------------------------------------------------------------------------
 # General
