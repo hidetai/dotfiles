@@ -77,15 +77,6 @@
 ;;; Frame Settings
 ;;;----------------------------------------------------------------------------
 
-;; Line numbers
-(global-linum-mode t)
-;; Font settings of line numbers
-(set-face-attribute 'linum nil
-                    :foreground "#800"
-                    :height 0.9)
-;; Format of line numbers
-(setq linum-format "%4d")
-
 ;; Show line number on mode lines
 (line-number-mode t)
 
