@@ -30,13 +30,21 @@
 ;; If there is only one window, create other window,
 ;; else move to another window.
 ;; See http://d.hatena.ne.jp/rubikitch/20100210/emacs
-
 (defun other-window-or-split ()
   (interactive)
   (when (one-window-p)
     (split-window-horizontally))
   (other-window 1))
 (global-set-key (kbd "C-t") 'other-window-or-split)
+
+;; Search the word your cursor looking at
+;;   See http://d.hatena.ne.jp/suztomo/20081123/1227466198
+(defun isearch-forward-with-heading ()
+  "Search the word your cursor looking at."
+  (interactive)
+  (command-execute 'backward-word)
+  (command-execute 'isearch-forward))
+(global-set-key "\C-s" 'isearch-forward-with-heading)
 
 ;; Go to line N
 (global-set-key "\M-g" 'goto-line)
