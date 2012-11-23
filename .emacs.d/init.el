@@ -289,22 +289,6 @@
   ;; (add-to-list 'auto-mode-alist '("\\.txt$" . org-mode)))
 
 ;;;----------------------------------------------------------------------------
-;;; elscreen.el
-;;;
-;;;   Elscreen needs APEL
-;;;     http://www4.kcn.ne.jp/~boochang/emacs/apel.html
-;;;
-;;;   Get elscreen from http://www.morishima.net/~naoto/elscreen-ja/
-;;;----------------------------------------------------------------------------
-
-(setq elscreen-prefix-key "\C-c")
-(when (require 'elscreen nil t)
-  (if window-system
-      (define-key elscreen-map "\C-c" 'iconify-or-deiconify-frame)
-    (define-key elscreen-map "\C-c" 'suspend-emacs))
-  (setq elscreen-tab-display-kill-screen nil))
-
-;;;----------------------------------------------------------------------------
 ;;; google-c-style.el
 ;;;
 ;;;   http://google-styleguide.googlecode.com/svn/trunk/google-c-style.el
