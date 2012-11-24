@@ -306,6 +306,33 @@
   (add-hook 'c-mode-common-hook 'google-set-c-style)
   (add-hook 'c-mode-common-hook 'google-make-newline-indent))
 
+;;;----------------------------------------------------------------------------
+;;; gtags.el
+;;;
+;;;   http://www.gnu.org/software/global/global.html
+;;;----------------------------------------------------------------------------
+
+;; Add path for /opt/local/bin/global for Mac
+(when (eq system-type 'darwin)
+ (setq exec-path (cons "/opt/local/bin" exec-path))
+ (setenv "PATH"
+         (concat '"/opt/local/bin:" (getenv "PATH"))))
+
+(autoload 'gtags-mode "gtags" "" t)
+
+(setq gtags-mode-hook
+      '(lambda ()
+         (local-set-key "\M-t" 'gtags-find-tag)
+         (local-set-key "\M-r" 'gtags-find-rtag)
+         (local-set-key "\M-s" 'gtags-find-symbol)
+         ))
+
+(add-hook 'c-mode-common-hook
+          '(lambda()
+             (gtags-mode 1)
+             (gtags-make-complete-list)
+             ))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Extra Settings ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
