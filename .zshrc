@@ -80,9 +80,6 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 ## GNU Screen Titles
 case "$TERM" in
 screen)
-    preexec() {
-        echo -ne "\ek#${1%% *}\e\\"
-    }
     precmd() {
         echo -ne "\ek$(basename $(pwd))\e\\"
     }
