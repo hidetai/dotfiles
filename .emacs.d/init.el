@@ -152,14 +152,12 @@
   (set-face-attribute 'default nil
                       :family "Consolas"
                       :height 120)
-  (set-fontset-font
-   nil
-   'japanese-jisx0208
-   (font-spec :family "Meiryo"))
-  (setq face-font-rescale-alist
-        '((".*Consolas.*" . 1.0)
-          (".*Meiryo.*" . 1.15)
-          ("-cdac$" . 1.3))))
+  (set-fontset-font nil
+                    'japanese-jisx0208
+                    (font-spec :family "Meiryo"))
+  (setq face-font-rescale-alist '((".*Consolas.*" . 1.0)
+                                  (".*Meiryo.*" . 1.15)
+                                  ("-cdac$" . 1.3))))
 
 ;;;----------------------------------------------------------------------------
 ;;; Emacs Behavior
