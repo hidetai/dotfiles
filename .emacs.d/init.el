@@ -125,8 +125,6 @@
 ;;;  Text Editing
 ;;;----------------------------------------------------------------------------
 
-;; Set tab size to 4 chars
-(setq-default tab-width 4)
 ;; Not use tabs
 (setq-default indent-tabs-mode nil)
 
