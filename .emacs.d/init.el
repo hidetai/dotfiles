@@ -110,7 +110,7 @@
 (let ((ws window-system))
   (cond ((eq ws 'ns) ; for MacBook Pro 15 inch display
          (set-frame-position (selected-frame) 0 0)
-         (set-frame-size (selected-frame) 175 50))))
+         (set-frame-size (selected-frame) 88 50))))
 
 ;;;----------------------------------------------------------------------------
 ;;;  Window Settings
@@ -140,20 +140,12 @@
 ;;;----------------------------------------------------------------------------
 
 ;; For Mac
-;; See http://macemacsjp.sourceforge.jp/
 (when (eq window-system 'ns)
-  (create-fontset-from-ascii-font "Menlo-14:weight=normal:slant=normal"
-                                  nil
-                                  "menlokakugo")
-  (set-fontset-font "fontset-menlokakugo"
-                    'unicode
-                    (font-spec :family "Hiragino Kaku Gothic ProN")
-                    nil
-                    'append)
-  (add-to-list 'default-frame-alist
-               '(font . "fontset-menlokakugo"))
-  (setq face-font-rescale-alist
-        '((".*Hiragino.*" . 1.2) (".*Menlo.*" . 1.0))))
+  (set-face-attribute 'default nil
+                      :family "Ricty"
+                      :height 160)
+  (set-fontset-font nil 'japanese-jisx0208
+                    (font-spec :family "Ricty")))
 
 ;; For Windows
 (when (eq system-type 'windows-nt)
