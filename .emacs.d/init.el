@@ -92,13 +92,13 @@
 (column-number-mode t)
 
 ;; Hide the tool bar
-(tool-bar-mode -1)
+(if window-system (tool-bar-mode -1))
 
 ;; Hide the menu bar
 (menu-bar-mode -1)
 
 ;; Hide the scroll bar
-(set-scroll-bar-mode nil)
+(if window-system (set-scroll-bar-mode nil))
 
 ;; Transparency
 (if window-system (progn (set-frame-parameter nil 'alpha 75)))
