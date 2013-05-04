@@ -34,7 +34,7 @@ export MATHPATH=/opt/local/man:$MANPATH
 
 ## Complement
 autoload -U compinit && compinit
-zstyle ':completion:*:default' menu select=1
+setopt no_auto_menu
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
