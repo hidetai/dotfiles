@@ -16,6 +16,14 @@ Create symbolic links.
     cd ~
     ./dotfiles/install.sh
 
+Vim Setup
+---------
+
+Launch vim, and execute `:NeoBundleInstall` to install bundles.
+
+    :NeoBundleInstall
+
+
 Updating
 --------
 
