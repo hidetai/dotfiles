@@ -12,7 +12,7 @@ dotdir=$HOME/dotfiles
 
 ## zsh
 ln -ns $dotdir/.zshrc $HOME
-ln -ns $dotdir/.zsh $HOME.zsh
+ln -ns $dotdir/.zsh $HOME/.zsh
 
 ## screen
 ln -ns $dotdir/.screenrc $HOME
@@ -23,4 +23,4 @@ ln -ns $dotdir/.emacs.d/init.el $HOME/.emacs.d/
 ## vim
 mkdir -p $HOME/.vim/bundle
 ln -ns $dotdir/neobundle.vim $HOME/.vim/bundle/neobundle.vim
-ln -ns $dotdir/.vimrc .vimrc
+ln -ns $dotdir/.vimrc $HOME/.vimrc
