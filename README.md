@@ -23,6 +23,16 @@ Launch vim, and execute `:NeoBundleInstall` to install bundles.
 
     :NeoBundleInstall
 
+Zsh Setup
+---------
+
+Show the path of zsh.
+
+    which zsh
+
+Change a login shell to zsh.
+
+    chsh
 
 Updating
 --------
