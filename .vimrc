@@ -20,6 +20,9 @@ nnoremap <silent> ,um :<C-u>Unite file_mru<CR>
 nnoremap <silent> ,uu :<C-u>Unite buffer file_mru<CR>
 nnoremap <silent> ,ua :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
 
+" Markdown
+NeoBundle 'tpope/vim-markdown'
+
 " Molokai Color Scheme
 NeoBundle 'tomasr/molokai'
 
