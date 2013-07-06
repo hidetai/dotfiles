@@ -9,8 +9,11 @@ call neobundle#rc(expand('~/.vim/bundle'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" Bundles
+""" Bundles
+" Unite
 NeoBundle 'Shougo/unite.vim'
+
+" Molokai Color Scheme
 NeoBundle 'tomasr/molokai'
 
 syntax on
