@@ -76,3 +76,9 @@ colorscheme molokai
 
 " Highlighten
 set hlsearch
+
+""" Local Configuration
+if filereadable(expand('~/.vimrc.local'))
+  source ~/.vimrc.local
+endif
+
