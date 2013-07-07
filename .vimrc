@@ -21,6 +21,9 @@ nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nnoremap <silent> ,ur :<C-u>Unite -buffer-name=register register<CR>
 nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>
 
+" VimFiler
+NeoBundle 'Shougo/vimfiler'
+
 "" neocomplcache
 " See: http://vim-users.jp/2010/10/hack177/
 NeoBundle 'Shougo/neocomplcache'
