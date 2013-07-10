@@ -74,6 +74,9 @@ filetype indent on
 
 colorscheme molokai
 
+""" Search
+" Incremental search 
+set incsearch
 " Highlighten
 set hlsearch
 
