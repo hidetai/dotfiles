@@ -85,3 +85,5 @@ if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
 
+" Java
+:let java_highlight_all=1
