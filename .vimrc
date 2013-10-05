@@ -85,6 +85,9 @@ set hlsearch
 """ no swap files
 set noswapfile
 
+""" no backup files
+set nobackup
+
 """ Local Configuration
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
