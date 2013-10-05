@@ -74,6 +74,9 @@ syntax on
 filetype plugin on
 filetype indent on
 
+""" Replace tab with spaces
+set expandtab
+
 colorscheme molokai
 
 """ Search
