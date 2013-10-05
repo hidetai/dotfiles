@@ -82,6 +82,9 @@ set incsearch
 " Highlighten
 set hlsearch
 
+""" no swap files
+set noswapfile
+
 """ Local Configuration
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
