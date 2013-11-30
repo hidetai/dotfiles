@@ -70,9 +70,12 @@ stty stop undef
 ## Prompt
 autoload colors
 colors
-PROMPT="%{${fg[magenta]}%}%n:%m %(!.#.$) %{${reset_color}%}"
+PROMPT="%{${fg[magenta]}%}%m %(!.#.$) %{${reset_color}%}"
 PROMPT2="%{${fg[magenta]}%}%_> %{${reset_color}%}"
 SPROMPT="%{${fg[red]}%}correct: %R -> %r [nyae]? %{${reset_color}%}"
+RPROMPT="%{${fg[magenta]}%}[%n]%{${reset_color}%}"
+
+setopt transient_rprompt
 
 ## GNU Screen Titles
 case "$TERM" in
