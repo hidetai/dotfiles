@@ -70,7 +70,8 @@ stty stop undef
 ## Prompt
 autoload colors
 colors
-PROMPT="%{${fg[magenta]}%}[%m:%~] %(!.#.$) %{${reset_color}%}"
+PROMPT="%{${fg[yellow]}%}[%~]%{${reset_color}%}
+%{${fg[red]}%}%n${fg[magenta]}(@%m) %(!.#.$) %{${reset_color}%}"
 PROMPT2="%{${fg[magenta]}%}%_> %{${reset_color}%}"
 SPROMPT="%{${fg[red]}%}correct: %R -> %r [nyae]? %{${reset_color}%}"
 
