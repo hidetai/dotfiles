@@ -12,12 +12,14 @@ dotdir=$HOME/dotfiles
 
 ## zsh
 ln -ns $dotdir/.zshrc $HOME
-ln -ns $dotdir/.zsh $HOME/.zsh
 
 ## screen
 ln -ns $dotdir/.screenrc $HOME
 
 ## emacs
+if [ ! -d $HOME/.emacs.d/ ]; then
+    mkdir $HOME/.emacs.d/
+fi
 ln -ns $dotdir/.emacs.d/init.el $HOME/.emacs.d/
 
 ## vim
