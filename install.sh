@@ -24,3 +24,6 @@ ln -ns $dotdir/.emacs.d/init.el $HOME/.emacs.d/
 mkdir -p $HOME/.vim/bundle
 ln -ns $dotdir/neobundle.vim $HOME/.vim/bundle/neobundle.vim
 ln -ns $dotdir/.vimrc $HOME/.vimrc
+
+## git
+ln -ns $dotdir/.gitconfig $HOME/.gitconfig
