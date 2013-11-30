@@ -2,5 +2,7 @@
         ui = true
 [core]
         editor = /usr/bin/vim
+[push]
+	default = simple
 [include]
         path = ~/.gitconfig.local
