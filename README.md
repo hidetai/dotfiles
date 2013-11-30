@@ -1,7 +1,7 @@
 Dotfiles
 ======================
 
-My config files for emacs, zsh, tmux, and screen.
+My config files for vim, zsh, tmux, and screen.
 
 Installation
 ------------
