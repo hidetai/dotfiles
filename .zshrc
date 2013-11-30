@@ -73,7 +73,6 @@ colors
 PROMPT="%{${fg[magenta]}%}[%m:%~] %(!.#.$) %{${reset_color}%}"
 PROMPT2="%{${fg[magenta]}%}%_> %{${reset_color}%}"
 SPROMPT="%{${fg[red]}%}correct: %R -> %r [nyae]? %{${reset_color}%}"
-RPROMPT="%{${fg[cyan]}%}[%n]%{${reset_color}%}"
 
 export LSCOLORS=exfxcxdxbxegedabagacad
 
