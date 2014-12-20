@@ -16,12 +16,6 @@ ln -ns $dotdir/.zshrc $HOME
 ## screen
 ln -ns $dotdir/.screenrc $HOME
 
-## emacs
-if [ ! -d $HOME/.emacs.d/ ]; then
-    mkdir $HOME/.emacs.d/
-fi
-ln -ns $dotdir/.emacs.d/init.el $HOME/.emacs.d/
-
 ## vim
 mkdir -p $HOME/.vim/bundle
 ln -ns $dotdir/neobundle.vim $HOME/.vim/bundle/neobundle.vim
