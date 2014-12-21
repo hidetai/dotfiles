@@ -37,8 +37,8 @@ Change a login shell to zsh.
 Git Setup
 ---------
 
-git config --file ~/.gitconfig.local user.name "Your Name"
-git config --file ~/.gitconfig.local user.email your-email@address.com
+    git config --file ~/.gitconfig.local user.name "Your Name"
+    git config --file ~/.gitconfig.local user.email your-email@address.com
 
 Updating
 --------
